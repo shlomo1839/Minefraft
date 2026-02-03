@@ -1,29 +1,62 @@
-html {
-  width: 100vw;
-  height: 100vh;
-}
 * {
-  padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  padding: 0;
 }
 
 body {
-  height: 100%;
-  display: grid;
-  grid-template-areas: "main" "game-footer";
-  grid-template-rows: 70% 30%;
+  height: 100vh;
+  width: 100vw;
+  background-color: skyblue;
 }
 
-.main {
-  width: 100%;
-  grid-area: main;
+.gameBoard {
   display: grid;
-  grid-template-columns: repeat(30, 1fr);
-  grid-template-rows: repeat(30, 1fr);
+  grid-template-columns: repeat(35, 1fr);
+  grid-template-rows: repeat(25, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 80%;
 }
 
 
 footer {
-  grid-area: footer;
+  height: 20%;
+  background-color: rgb(54, 49, 49);
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.footer_button {
+  font-size: 2em;
+  border: 1px solid gray;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.185);
+  border-radius: 20px;
+}
+
+.footer_div-1 {
+    display: flex;
+    gap: 15px;
+}
+
+.footer_div-2 {
+  font-size: 2em;
+  border: 1px solid gray;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.185);
+  border-radius: 20px;
+}
+
+footer img {
+  height: 55px;
+  width: 55px;
+}
+
+footer button {
+  background-color: gray;
+  border-radius: 5px;
 }
