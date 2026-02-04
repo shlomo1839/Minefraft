@@ -1,6 +1,24 @@
 const bodyContainer = document.getElementsByClassName("body-container")[0]
+const tools = document.querySelectorAll(".tool");
+const inventoryBox = document.querySelector(".box");
+const resetButton = document.querySelector("button");                              /* the reason for use query is for use forEch */
 // console.log(bodyContainer)
+
+// vairble for save game
+let selectoeTool = null;
+let inventory = null;
+
+// rules - which tool can carve which material
+const gameRules = {
+    "axe": ["wood", "leaves-gr"],
+    "pickaxe": ["stone", "coal", "gold", "diamond"],
+    "shovel": ["soil", "grass"],
+    "sword": ["creeperBody", "creeperFace"]
+};
+
 function createBoard() {
+    // clean board from game before
+    bodyContainer.innerHTML = "";
     for (let i = 1; i <= 25; i++) {
         for (let j = 1; j <= 40; j++) {
             if ( i <= 8) {
