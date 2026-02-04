@@ -25,11 +25,11 @@
 .h3 {
   background-color: rgb(119, 118, 118);
   color: wheat;
-  padding: 1rem 2rem;
+  padding: 1px 2px;
 }
 
 button {
-  padding: 1re 2rm;
+  padding: 1px 3px;
   background-color: rgb(143, 142, 142);
 }
 
@@ -40,8 +40,8 @@ button {
 
 .box {
   background-image: url('./img/box.png');
-  height: 7.5rem;
-  width: 7.5rem;
+  height: 7px;
+  width: 7px;
 }
 
 .tool {
@@ -72,3 +72,47 @@ button {
   width: 4rem;
   background-image: url('./img/pickaxe.png');
 }
+
+
+
+/* ---- the elements to --- */
+.sky {
+  background-color: #87ceeb;
+}
+
+.stone {
+  background-image: url('./img/Stone.jpg');
+}
+
+
+.coal {
+  background-image: url("./img/coal.png");
+}
+.creeperBody {
+  background-image: url("./img/creeperBody.png");
+}
+.creeperFace {
+  background-image: url("./img/creeperFace.png");
+}
+.gold {
+  background-image: url("./img/gold.png");
+}
+.grass {
+  background-image: url("./img/grass.png");
+}
+.leaves-gr {
+  background-image: url("./img/leaves-gr.png");
+}
+.redstone {
+  background-image: url("./img/redstone.jpeg");
+}
+.soil {
+  background-image: url("./img/soil.png");
+}
+.wood {
+  background-image: url("./img/wood.png");
+}
+.diamond {
+  background-image: url("./img/diamond.png");
+}
+
